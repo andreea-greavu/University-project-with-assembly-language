@@ -1,0 +1,17 @@
+A collection of x86-64 NASM assembly exercises, each  built with its own Makefile.
+
+task1 — Labyrinth Solver (paris.asm)
+
+Implements solve_labyrinth, a function that explores a 2D character maze passed in from C (as an array of row strings) and finds the exit position. It walks the maze step by step, marking visited cells as it goes, checking at each step whether it has reached the last row/column (the exit), and moving to the next unvisited direction otherwise.
+
+task2 — Reverse Polish Notation Calculator (reverse_polish_notation.asm)
+
+Implements reverse_polish_notation, a calculator that evaluates an expression written in RPN (postfix) form using the CPU stack. Operands are pushed as they're read; when an operator is encountered, the top two values are popped, the operation is applied, and the result is pushed back — including manual string-to-integer conversion for the input tokens.
+
+task3 — Custom printf (my_printf.asm)
+
+Implements my_printf, a minimal reimplementation of printf built only on top of putc. Parses the format string character by character, handling the supported format specifiers and printing arguments accordingly, without relying on the standard library's formatting functions.
+
+task4 — Sudoku Validator (check_sudoku.asm)
+
+Implements three functions — check_row, check_column, and check_box — that validate a Sudoku grid of any size. Each function checks that a given row, column, or sub-box sums to size*(size+1)/2 and multiplies to size!, which together confirm it contains each number exactly once. Uses a different Makefile (-lm, -no-pie) than the other tasks.
