@@ -1,4 +1,3 @@
-A collection of x86-64 NASM assembly exercises, each  built with its own Makefile.
 
 task1 — Labyrinth Solver (paris.asm)
 
