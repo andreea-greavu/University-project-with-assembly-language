@@ -5,10 +5,6 @@ global check_column
 global check_row
 global check_box
 
-; int check_row(int **array, int size, int rowNr)
-; rdi = int **array
-; rsi = int size
-; rdx = int rowNr
 check_row:
 	push rbp
 	mov rbp, rsp
@@ -95,10 +91,6 @@ incorect_rand:
 	pop rbp
 	ret
 	
-; int check_column(int **array, int size, int columnNr)
-; rdi = int **array
-; rsi = int size
-; rdx = int columnNr
 check_column:
 	push rbp
 	mov rbp, rsp
@@ -180,10 +172,6 @@ incorect_col:
 	pop rbp
 	ret
 	
-; int check_box(int **array, int size, int boxNr)
-; rdi = int **array
-; rsi = int size
-; rdx = int boxNr
 check_box:
 	push rbp
 	mov rbp, rsp
